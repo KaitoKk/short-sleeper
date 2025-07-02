@@ -55,6 +55,16 @@
     shortsLockupElements.forEach(element => {
       element.style.display = 'none';
     });
+
+    // 検索ページのShortsグリッドシェルフを非表示
+    const gridShelves = document.querySelectorAll('grid-shelf-view-model');
+    gridShelves.forEach(shelf => {
+      // "ショート"または"Shorts"のタイトルを含むシェルフを検索
+      const titleElement = shelf.querySelector('[role="text"]');
+      if (titleElement && (titleElement.textContent === 'ショート' || titleElement.textContent === 'Shorts')) {
+        shelf.style.display = 'none';
+      }
+    });
   }
 
   // 初回実行
