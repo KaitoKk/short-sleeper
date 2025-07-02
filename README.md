@@ -1,6 +1,6 @@
-# YouTube Shorts Blocker
+# Short Sleeper
 
-Claude Codeで作ったので動作については保証できない。
+Claude Codeで作ったので動作については,保証できない。
 YouTubeのショート動画を非表示にするChrome拡張機能です。
 
 ## 機能
