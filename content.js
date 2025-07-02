@@ -43,6 +43,18 @@
     if (miniSidebarShortsEn) {
       miniSidebarShortsEn.style.display = 'none';
     }
+
+    // 動画視聴ページ右側のShortsセクションを非表示
+    const watchPageReelShelves = document.querySelectorAll('ytd-reel-shelf-renderer');
+    watchPageReelShelves.forEach(shelf => {
+      shelf.style.display = 'none';
+    });
+
+    // Shortsロックアップ要素を非表示
+    const shortsLockupElements = document.querySelectorAll('ytm-shorts-lockup-view-model, ytm-shorts-lockup-view-model-v2');
+    shortsLockupElements.forEach(element => {
+      element.style.display = 'none';
+    });
   }
 
   // 初回実行
