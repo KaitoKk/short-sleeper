@@ -21,9 +21,27 @@
     }
 
     // サイドバーのShortsリンクを非表示
-    const sidebarShorts = document.querySelector('ytd-guide-entry-renderer:has([href="/shorts"])');
+    const sidebarShorts = document.querySelector('ytd-guide-entry-renderer:has([title="ショート"])');
     if (sidebarShorts) {
       sidebarShorts.style.display = 'none';
+    }
+
+    // 英語版のShortsリンクも非表示
+    const sidebarShortsEn = document.querySelector('ytd-guide-entry-renderer:has([title="Shorts"])');
+    if (sidebarShortsEn) {
+      sidebarShortsEn.style.display = 'none';
+    }
+
+    // ミニサイドバーのShortsリンクを非表示（日本語）
+    const miniSidebarShorts = document.querySelector('ytd-mini-guide-entry-renderer[aria-label="ショート"]');
+    if (miniSidebarShorts) {
+      miniSidebarShorts.style.display = 'none';
+    }
+
+    // ミニサイドバーのShortsリンクを非表示（英語）
+    const miniSidebarShortsEn = document.querySelector('ytd-mini-guide-entry-renderer[aria-label="Shorts"]');
+    if (miniSidebarShortsEn) {
+      miniSidebarShortsEn.style.display = 'none';
     }
   }
 
