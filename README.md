@@ -27,8 +27,16 @@ YouTubeのショート動画を非表示にするChrome拡張機能です。
 
 ## 対応ブラウザ
 
+### Chrome系
 - Google Chrome（Manifest V3対応）
-- その他Chromium系ブラウザ（Arc、Edge等）
+- Arc、Edge、Braveなど（Chromium系ブラウザ）
+
+### Firefox系
+- Firefox 42.0以降
+- Firefox ESR
+- その他Gecko系ブラウザ
+
+**Firefox版のインストール方法**: `FIREFOX_INSTALL.md` を参照
 
 ## 技術仕様
 
